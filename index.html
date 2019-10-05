@@ -9,8 +9,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
+/* Color theme:
+dark teal - 204E5F
+medium teal - 79A7A8
+pink - FF8984
+light blue - B7D7D8
+light blue/white - EDF7F5
+*/
 .jumbotron {
-    background-color: #6ba2f9;
+    background-color: #204E5F;
     color: #fff;
     padding: 100px 25px;
 }
@@ -26,8 +33,9 @@
 @media screen and (max-width: 768px) {
     .col-sm-4 {
         text-align: center;
-        margin: 25px 0;
+        margin: 25px 0px;
     }
+
 }
 .logo-small {
     color: #f4511e;
@@ -39,9 +47,10 @@
     font-size: 200px;
 }
 .thumbnail {
-    padding: 0 0 15px 0;
+    padding: 15px;
     border: none;
     border-radius: 0;
+    height: 250px;
 }
 
 .thumbnail img {
@@ -51,7 +60,7 @@
 }
 .navbar {
     margin-bottom: 0;
-    background-color: #6ba2f9;
+    background-color: #204E5F;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -64,8 +73,8 @@
     color: #fff !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #6ba2f9 !important;
+.navbar-nav li a:hover, .navbar-nav li.active a , .navbar-brand:hover{
+    color: #FF8984 !important;
     background-color: #fff !important;
 }
 
@@ -76,8 +85,21 @@
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #6ba2f9;
+    color: #204E5F;
 }
+#experience ul{
+  text-align: center;
+  list-style-type: circle;
+  list-style-position: inside;
+    padding-left: 0;
+  }
+.navbar-brand{
+  margin: 0px 25px;
+}
+#work .col-sm-4{
+  height: 300px;
+}
+
 </style>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -86,9 +108,11 @@ footer .glyphicon {
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brandi Durham</a>
+      <a class="navbar-brand" href="index.html">Brandi Durham</a>
+      <a class="navbar-brand" href="https://github.com/durhambn"><img src="github-logo.png"></a>
+      <a class="navbar-brand" href="https://www.linkedin.com/in/brandi-durham/"><img src="linkedin.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -102,21 +126,24 @@ footer .glyphicon {
   </div>
 </nav>
 <div class="jumbotron">
-  <h1>Brandi Durham</h1> 
-  <p>Junior Computer Science Student at College of Charleston</p> 
+  <h1>Brandi Durham</h1>
+  <p>SENIOR Computer Science Student at College of Charleston</p>
 </div>
 
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2>About Me ...</h2>
-      <h4>I am a junior at the College of Charleston studying Computer Sciene. I am teaching myself html and wanted to make a personal website.</h4> 
-      <p>I am currently working as an intern in an information security office.</p> 
-      <p>My two passions are cybersecurity and software development. Before my graduation in May of 2020, I hope to have a decision on which path I'd like to take</p>
+      <h4>I am a senior at the College of Charleston studying Computer Sciene. After taking a website design course at The College, I wanted to try my luck at a personal website.</h4>
+      <p>When I am not hard at work studying, you can find me at the beach with a good book or catching up on my favorite TV shows.</p>
+      <p>My two passions are cybersecurity and software development. I enjoy being able to combine the two while developing. Before my graduation in May of 2020, I hope to make a decision on which path I'd like to take.</p>
+      <p>To view my resume, <a href="Resume2019.pdf"> click here</a>.</p>
+      <p>To view my GitHub page, <a href="https://github.com/durhambn"> click here</a>.</p>
+      <p>To view my LinkedIn page, <a href="https://www.linkedin.com/in/brandi-durham"> click here</a>.</p>
       <!--<button class="btn btn-default btn-lg">Get in Touch</button>-->
     </div>
     <div class="col-sm-4">
-        <img src = "headshot.jpg" alt = "Brandi" width = "140" height = "150">
+        <img src = "headshot.jpg" alt = "Brandi" width = "200">
         <!--<span class="glyphicon glyphicon-signal logo"></span>-->
     </div>
   </div>
@@ -130,16 +157,26 @@ footer .glyphicon {
     <div class="col-sm-4">
       <!--<span class="glyphicon glyphicon-off"></span>-->
       <h4>Medical University of South Carolina Information Security Office Intern</h4>
-      <p>January 2018 - Present</p>
-      <p> Tell about Job </p>
+      <p>January 2018 - April 2019</p>
+      <ul>
+      <li>Vulnerability Management: Performed scans on the network to find end of life assets or assets vulnerable to exploits.</li>
+<li>Risk and Compliance: Mitigated company risk by performing risk assessment for different applications.</li>
+<li>Incident Response: Mitigated risk by sinkholing domains associated with phishing campaigns.</li>
+<li>Worked to increase Mac laptop encryption compliance from 60% to 86%.</li>
+<li>Created a script in Python to analyze metrics on our FireEye HX tool.</li></ul>
     </div>
     <div class="col-sm-4">
-      <h4>Bookkeeper at Ingles Markets</h4>
-      <p>May 2016 - December 2017</p>
+      <h4>Quality Assurance Intern at QS/1</h4>
+      <p>May 2019 - July 2019</p>
+      <ul>
+      <li>Worked in an Agile environment with 2-week sprints on pharmacy software product.</li>
+      <li>Ran automation testing on product for regression testing purposes.</li>
+    </ul>
     </div>
     <div class="col-sm-4">
-      <h4>Cashier at Ingles Markets</h4>
-      <p>June 2014 - May 2016</p>
+      <h4>Student Web Application Developer</h4>
+      <p>September 2019 - Present</p>
+      <p>Wrote an interactive Salesforce application that will internally support Events in the Office of Admissions.</p>
     </div>
     </div>
     <br>
@@ -171,8 +208,23 @@ footer .glyphicon {
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail bg-grey">
+        <p><strong>Election Software</strong></p>
+        <p>Semester long group project for CSCI 360</p>
+        <p>Used Java, JavaFX, SceneBuilder, and Git to implement project. Implemented GRASP and GoF design patterns. Worked in group of 3 to plan, design, and code application.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail bg-grey">
+        <p><strong>Website Design Semester Project</strong></p>
+        <p>Individual project for CSCI 115</p>
+        <p>Used HTML/CSS to design and code a website that displays resources on colleges in South Carolina with computer science programs.</p>
+        <p><a href=http://durhambn.stu.cofc.edu/115/project/index.html>Click here to view project site!</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail bg-grey">
         <p><strong>Testing Framework</strong></p>
-        <p>Class group project for CSCI 362</p>
+        <p>Semester long group project for CSCI 362</p>
         <p>Build a testing framework using python and bash to test the command line text editor, NeoVim.</p>
       </div>
     </div>
@@ -188,14 +240,26 @@ footer .glyphicon {
         <p><strong>Malware Detection Metrics Script</strong></p>
         <p>Worked with other interns to build a Python script. </p>
         <p>This allowed us to call the FireEye HX API and gather metrics on the malware detection agent on all hosts.</p>
+        <p>*Not on GitHub</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail bg-grey">
+        <p><strong>Homework from CSCI 115: Website Design</strong></p>
+
+        <p><a href= http://durhambn.stu.cofc.edu/115/artists/index.html>Artist Website</a></p>
+        <p><a href=http://durhambn.stu.cofc.edu/115/chapter6/index.html>Katie's Kupcakes</a></p>
+        <p><a href=http://durhambn.stu.cofc.edu/115/aesthetics/index.html>Beaches Around The World</a></p>
+
       </div>
     </div>
 </div>
 
 <div id="classes" class="container-fluid text-center">
-  <div class="container">
+  <div>
   <h2>Past Classes</h2>
   <p>Relevant past classes taken at CofC</p>
+  <p>To see programs created for these classes, check out my GitHub page!</p>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -214,7 +278,7 @@ footer .glyphicon {
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Class that teaches programming in Java. Teaches the basic of java.</div>
+        <div class="panel-body">Class that teaches the basics of programming in Java.</div>
       </div>
     </div>
     <div class="panel panel-default">
@@ -254,7 +318,7 @@ footer .glyphicon {
         </h4>
       </div>
       <div id="collapse6" class="panel-collapse collapse">
-        <div class="panel-body">Class that teaches more in depth details about how the computer works.</div>
+        <div class="panel-body">Class that teaches more in depth details about how the computer works and is organized.</div>
       </div>
     </div>
     <div class="panel panel-default">
@@ -264,7 +328,7 @@ footer .glyphicon {
         </h4>
       </div>
       <div id="collapse7" class="panel-collapse collapse">
-        <div class="panel-body">Class that teaches about different details of software engineering with a focus on testing. Build a testing framework of a free open source software (FOSS) NeoVim using python and bash. </div>
+        <div class="panel-body">Class that teaches about different details of software engineering with a focus on testing. Built a testing framework of a free open source software (FOSS) NeoVim using python and bash. </div>
       </div>
     </div>
     <div class="panel panel-default">
@@ -287,57 +351,64 @@ footer .glyphicon {
         <div class="panel-body">Class that teaches different machine learning algorithms and how they can be used to solve cybersecurity problems.</div>
       </div>
     </div>
+
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Math Courses </a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">CSCI 115: Website Design</a>
         </h4>
       </div>
       <div id="collapse10" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches the basics of website design, HTML, and CSS.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">CSCI 360: Software Architecture and Design</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches software design principles such as GRASP, GoF.</div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Math Courses </a>
+        </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse">
         <div class="panel-body">Discrete Structures I and II, Statistical Methods I, Linear Algebra</div>
       </div>
     </div>
-  </div> 
+  </div>
   <div id="classes" class="container-fluid text-center">
     <h2> Future Courses </h2>
     <p> Courses I plan to take at CofC</p>
     <!--<ul style="list-style-type:none">-->
-    <p>CSCI 320: Programming Language Concepts</p>
-    <p>CSCI 360: Software Architecture and Design</p>
-    <p>CSCI 392: Seminar on Computing in Society</p>
-    <p>CSCI 440: Computer Networks</p>
+    <p>CSCI 320: Programming Language Concepts*</p>
+    <p>CSCI 392: Seminar on Computing in Society*</p>
     <p>CSCI 462: Software Engineering Practicum</p>
-    <p>CSCI 115: Website Design</p>
-    <p>CSCI 215: Website Programming</p>
+    <p>CSCI 215: Website Programming*</p>
+    <p>CSCI 332: Database Concepts</p>
+    <p>CSCI 370: Mobile App Development</p>
+    <p><small>*Classes currently taking.</small></p>
     </div>
+</div>
+
 </div>
 
 <br>
 <div class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
-    <div class="col-sm-5">
-      <p>Leave your email and a message and I'll get back to you!</p>
+
+      <p>Send me an email or call me, and I'll get back to you!</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Charleston, SC, US</p>
       <p><span class="glyphicon glyphicon-phone"></span> 864.420.3378</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> durhambn@g.cofc.edu</p> 
-    </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div> 
-    </div>
+      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:durhambn@g.cofc.edu">durhambn@g.cofc.edu</a></p>
   </div>
 </div>
 
@@ -346,7 +417,7 @@ footer .glyphicon {
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a> and customized by Brandi Durham</p> 
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a> and customized by Brandi Durham</p>
 </footer>
 <script>
 $(document).ready(function(){
