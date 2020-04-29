@@ -101,6 +101,7 @@ footer .glyphicon {
 }
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -137,7 +138,7 @@ footer .glyphicon {
       <h4>I am a senior at the College of Charleston studying Computer Sciene. After taking a website design course at The College, I wanted to try my luck at a personal website.</h4>
       <p>When I am not hard at work studying, you can find me at the beach with a good book or catching up on my favorite TV shows.</p>
       <p>My two passions are cybersecurity and software development. I enjoy being able to combine the two while developing. Before my graduation in May of 2020, I hope to make a decision on which path I'd like to take.</p>
-      <p>To view my resume, <a href="Resume2019.pdf"> click here</a>.</p>
+      <p>To view my resume, <a href="Resume2020.pdf"> click here</a>.</p>
       <p>To view my GitHub page, <a href="https://github.com/durhambn"> click here</a>.</p>
       <p>To view my LinkedIn page, <a href="https://www.linkedin.com/in/brandi-durham"> click here</a>.</p>
       <!--<button class="btn btn-default btn-lg">Get in Touch</button>-->
@@ -175,8 +176,8 @@ footer .glyphicon {
     </div>
     <div class="col-sm-4">
       <h4>Student Web Application Developer</h4>
-      <p>September 2019 - Present</p>
-      <p>Wrote an interactive Salesforce application that will internally support Events in the Office of Admissions.</p>
+      <p>September 2019 - May 2020</p>
+      <p>Utilized Salesforce Visualforce pages and apex code to create web pages and custom email templates that helped the Office of Admissions to connect with future students.</p>
     </div>
     </div>
     <br>
@@ -372,6 +373,46 @@ footer .glyphicon {
         <div class="panel-body">Class that teaches software design principles such as GRASP, GoF.</div>
       </div>
     </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">CSCI CSCI 215: Website Programming </a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches the basics of JavaScript and integrating it into HTML.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">CSCI 320: Programming Language Concepts</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches the basics of different programming languages using Scheme and Prolog.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">CSCI 370: Mobile App Development</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches the basics of Android app development.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">CSCI 332: Database Concepts</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">Class that teaches concepts of database design and development using MySQL.</div>
+      </div>
+    </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -384,25 +425,56 @@ footer .glyphicon {
       </div>
     </div>
   </div>
-  <div id="classes" class="container-fluid text-center">
-    <h2> Future Courses </h2>
-    <p> Courses I plan to take at CofC</p>
-    <!--<ul style="list-style-type:none">-->
-    <p>CSCI 320: Programming Language Concepts*</p>
-    <p>CSCI 392: Seminar on Computing in Society*</p>
-    <p>CSCI 462: Software Engineering Practicum</p>
-    <p>CSCI 215: Website Programming*</p>
-    <p>CSCI 332: Database Concepts</p>
-    <p>CSCI 370: Mobile App Development</p>
-    <p><small>*Classes currently taking.</small></p>
-    </div>
-</div>
 
 </div>
 
+</div>
+<!--
 <br>
 <div class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
+  <div ng-controller="MainCtrl" ng-app="myApp">
+      <form name="contactForm" novalidate>
+      -->
+        <!-- NAME -->
+        <!--
+        <div ng-class="{'form-error':contactForm.name.$dirty && contactForm.name.$invalid, 'form-group':true}">
+          <input type="text" name="name" ng-model="formData.name" placeholder="Enter Name" ng-minlength="3" required />
+          <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$invalid" >
+            <div ng-message="minlength">Name too short</div>
+            <div ng-message="required">Required Name</div>
+          </div>
+        </div>
+      -->
+        <!-- EMAIL -->
+        <!--
+        <div ng-class="{'form-error':contactForm.email.$dirty && contactForm.email.$invalid, 'form-group':true}">
+          <input type="email" name="email" ng-model="formData.email" placeholder="Email Address" required />
+          <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty">
+            <div ng-message="email">Invalid Email</div>
+            <div ng-message="required">Required Email</div>
+          </div>
+        </div>
+      -->
+        <!-- TEL -->
+        <!--
+        <div ng-class="{'form-error':contactForm.tel.$dirty && contactForm.tel.$invalid, 'form-group':true}">
+          <input type="text" name="tel" ng-pattern=/\d{3}-\d{3}-\d{4}/ ng-model="formData.tel" placeholder="XXX-XXX-XXXX" required />
+          <div ng-messages="contactForm.tel.$error" ng-show="contactForm.tel.$dirty">
+            <div ng-message="pattern">Valid form: XXX-XXX-XXXX</div>
+            <div ng-message="required">Required Phone</div>
+          </div>
+        </div>
+      -->
+        <!-- SUBMIT BUTTON -->
+        <!--
+        <input type="submit" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="Submit" />
+      </form>
+    </div>
+    <br>
+  -->
+
+    <!--
   <div class="row">
 
       <p>Send me an email or call me, and I'll get back to you!</p>
@@ -410,6 +482,7 @@ footer .glyphicon {
       <p><span class="glyphicon glyphicon-phone"></span> 864.420.3378</p>
       <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:durhambn@g.cofc.edu">durhambn@g.cofc.edu</a></p>
   </div>
+-->
 </div>
 
 
@@ -445,6 +518,20 @@ $(document).ready(function(){
     } // End if
   });
 })
+var app = angular.module('myApp', []);
+app.controller('MainCtrl', function($scope, $http) {
+  $scope.formData = {};
+  $scope.processForm = function() {
+    alert('valid form!')
+    alert("Hey " + $scope.formData.name + " ! Thanks for submitting a form. I get back in touch with you soon!")
+    $http({
+      method  : 'POST',
+      url     : 'form-to-email.php',
+      data    : $scope.formData,
+      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+    });
+  };
+});
 </script>
 </body>
 </html>
